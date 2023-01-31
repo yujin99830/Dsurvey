@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <title>Survey</title>
+</head>
+<body>
+    <div class= "container">
+    <p class="fs-3">freeCodeCamp Survey Form</p>
+    <p class="fs-5">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Name
+                <input class="form-control form-control-lg" type="text" placeholder="Enter your name" aria-label=".form-control-lg example">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col">
+                Email
+                <input class="form-control form-control-lg" type="text" placeholder="Enter your Email" aria-label=".form-control-lg example">
+            </div>
+        </div> 
+        <br />
+        <div class="row">
+            <div class="col">
+                Age
+                <input class="form-control form-control-lg" type="text" placeholder="Age" aria-label=".form-control-lg example">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col">
+                Which option best describes your current role?
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full-time job</option>
+                    <option value="3">Other</option>
+                  </select>
+            </div>
+        </div>
+        <br />
+        <p class="fs-5">Would you recommend freeCodeCamp to a friend?</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Definitely
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+                Maybe
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                Not Sure
+              </label>
+        </div>
+        <br />
+        <div class="col">
+            What is your favorite feature of freeCodeCamp?
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select an option</option>
+                <option value="1">Challenges</option>
+                <option value="2">Projects</option>
+            </select>
+        </div>
+        <br />
+        <p class="fs-5">What would you like to see imporved? (check all that apply)</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Front-end Projects
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Back-end Projects
+            </label>
+          </div>
+          <p class="fs-5">Any comments or suggestions?</p>
+          <>
+    </div>
+</body>
+</html>
